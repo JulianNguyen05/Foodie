@@ -187,7 +187,7 @@ namespace Foodie.User
             {
                 if (ListItemType == ListItemType.Footer)
                 {
-                    var footer = new LiteralControl("<tr><td colspan='5'><b>Your Cart is empty.</b><a href='Menu.aspx' class='badge badge-info ml-2'>Continue Shopping</a></td></tr><t/body></table>");
+                    var footer = new LiteralControl("<tr><td colspan='5'><b>Your Cart is empty.</b><a href='Menu.aspx' class='badge badge-info ml-2'>Continue Shopping</a></td></tr></tbody></table>");
                     container.Controls.Add(footer);
                 }
             }
