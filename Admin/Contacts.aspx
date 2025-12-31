@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Users.aspx.cs" Inherits="Foodie.Admin.Users" %>
-<%@ Import Namespace="Foodie" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="Contacts.aspx.cs" Inherits="Foodie.Admin.Contact" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
@@ -34,44 +33,46 @@
                                     <div class="row">
 
                                         <div class="col-12 mobile-inputs">
-                                            <h4 class="sub-title">Users Lists</h4>
+                                            <h4 class="sub-title">Contact Lists</h4>
                                             <div class="card-block table-border-style">
                                                 <div class="table-responsive">
 
-                                                    <asp:Repeater ID="rUsers" runat="server" OnItemCommand="rUsers_ItemCommand">
-                                                        <HeaderTemplate>
+                                                    <asp:Repeater ID="rContacts" runat="server" OnItemCommand="rContacts_ItemCommand">
+                                                        <headertemplate>
                                                             <table class="table data-table-export table-hover nowrap">
                                                                 <thead>
                                                                     <tr>
                                                                         <th class="table-plus">SrNo</th>
-                                                                        <th>Full Name</th>
                                                                         <th>User Name</th>
                                                                         <th>Email</th>
-                                                                        <th>Joined Date</th>
+                                                                        <th>Subject</th>
+                                                                        <th>Message</th>
+                                                                        <th>Contact Date</th>
                                                                         <th class="datatable-nosort">Delete</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                        </HeaderTemplate>
+                                                        </headertemplate>
 
-                                                        <ItemTemplate>
+                                                        <itemtemplate>
                                                             <tr>
                                                                 <td class="table-plus"><%# Eval("SrNo") %> </td>
-                                                                <td> <%# Eval("Name") %> </td>
-                                                                <td> <%# Eval("Username") %> </td>
-                                                                <td> <%# Eval("Email") %> </td>
+                                                                <td><%# Eval("Name") %> </td>
+                                                                <td><%# Eval("Email") %> </td>
+                                                                <td><%# Eval("Subject") %> </td>
+                                                                <td><%# Eval("Message") %> </td>
                                                                 <td><%# Eval("CreatedDate") %> </td>
                                                                 <td>
-                                                                    <asp:LinkButton ID="lnlDelete" Text="Delete" runat="server" CssClass="badge bg-danger" CommandArgument='<%# Eval("UserId") %>' CommandName="delete" OnClientClick="return confirm('Do you want to delete this User?')">
-                                                                    <i class="ti-trash"></i>
+                                                                    <asp:LinkButton ID="lnlDelete" Text="Delete" runat="server" CssClass="badge bg-danger" CommandArgument='<%# Eval("ContactId") %>' CommandName="delete" OnClientClick="return confirm('Do you want to delete this record?')">
+                                                                        <i class="ti-trash"></i>
                                                                     </asp:LinkButton>
                                                                 </td>
                                                             </tr>
-                                                        </ItemTemplate>
-                                                        <FooterTemplate>
+                                                        </itemtemplate>
+                                                        <footertemplate>
                                                             </tbody>
-                                                        </table>
-                                                        </FooterTemplate>
+                                                    </table>
+                                                        </footertemplate>
 
                                                     </asp:Repeater>
 
