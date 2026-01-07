@@ -188,13 +188,30 @@
     <Content Include="assets\pages\widget\amchart\worldLow.js" />
     <Content Include="assets\pages\widget\amchart\worldLow.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Category\3968de44-84a4-46cb-8658-b03dfd2b8d6f.png" />
+    <Content Include="Images\Category\4ff409bd-117e-414a-8181-3aeb1acc5427.png" />
+    <Content Include="Images\Category\57696039-b1d6-43bb-9335-56a94269e36d.png" />
+    <Content Include="Images\Category\6fb13dfb-aae1-40c4-bd6f-5a8b5d286564.png" />
+    <Content Include="Images\Category\c066592a-42f7-459c-ba77-356ec8881e90.png" />
     <Content Include="Images\Login.jpg" />
     <Content Include="Images\No_image.png" />
+    <Content Include="Images\Product\0b2ee7dd-b2c7-4cec-92c0-6589e56810e9.png" />
+    <Content Include="Images\Product\2251e62e-8030-4e5f-b8c9-a40eb94296eb.png" />
+    <Content Include="Images\Product\2df4a243-671c-4c79-b5bb-b6b3e33da285.png" />
+    <Content Include="Images\Product\4e253073-8772-43ce-8901-52a694c875d2.png" />
+    <Content Include="Images\User\19b30c56-fbcb-49ca-9cda-6da12160ca73.jpg" />
+    <Content Include="Images\User\7223d168-eb58-41d8-b83c-109f47c2b8ee.jpg" />
+    <Content Include="Images\User\e69e6313-7047-4a3c-9aaa-fb5414a72266.jpg" />
     <Content Include="itextsharp.dll" />
     <Content Include="TemplateFiles\css\bootstrap.css" />
     <Content Include="TemplateFiles\css\font-awesome.min.css" />
     <Content Include="TemplateFiles\css\responsive.css" />
     <Content Include="TemplateFiles\css\style.css" />
+    <Content Include="TemplateFiles\css\style.css.map" />
+    <Content Include="TemplateFiles\css\style.scss" />
+    <Content Include="TemplateFiles\fonts\fontawesome-webfont.ttf" />
+    <Content Include="TemplateFiles\fonts\fontawesome-webfont.woff" />
+    <Content Include="TemplateFiles\fonts\fontawesome-webfont.woff2" />
     <Content Include="TemplateFiles\images\about-img.png" />
     <Content Include="TemplateFiles\images\client1.jpg" />
     <Content Include="TemplateFiles\images\client2.jpg" />
@@ -387,11 +404,6 @@
     <Content Include="assets\datatables\fonts\themify.ttf" />
     <Content Include="assets\datatables\fonts\themify.woff" />
     <None Include="packages.config" />
-    <Content Include="TemplateFiles\css\style.css.map" />
-    <Content Include="TemplateFiles\css\style.scss" />
-    <Content Include="TemplateFiles\fonts\fontawesome-webfont.ttf" />
-    <Content Include="TemplateFiles\fonts\fontawesome-webfont.woff" />
-    <Content Include="TemplateFiles\fonts\fontawesome-webfont.woff2" />
     <Content Include="User\User.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -402,9 +414,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\Category\" />
-    <Folder Include="Images\Product\" />
-    <Folder Include="Images\User\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
